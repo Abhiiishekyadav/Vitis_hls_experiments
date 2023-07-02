@@ -1,0 +1,68 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'abhii' on host 'abhishek' (Windows NT_amd64 version 6.2) on Fri Jan 01 16:32:48 +0530 2021
+INFO: [HLS 200-10] In directory 'C:/Users/abhii/OneDrive/Desktop/vitis/fp_8'
+Sourcing Tcl script 'C:/Users/abhii/OneDrive/Desktop/vitis/fp_8/fp_8/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project fp_8 
+INFO: [HLS 200-10] Opening project 'C:/Users/abhii/OneDrive/Desktop/vitis/fp_8/fp_8'.
+INFO: [HLS 200-1510] Running: set_top convert_to_float_point 
+INFO: [HLS 200-1510] Running: add_files fp_8.cpp 
+INFO: [HLS 200-10] Adding design file 'fp_8.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/abhii/OneDrive/Desktop/vitis/fp_8/fp_8/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=fp_8_to_
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/abhii/OneDrive/Desktop/convert_to_float.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=pynq
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name fp_8_to_ -format ip_catalog -output C:/Users/abhii/OneDrive/Desktop/convert_to_float.zip -rtl verilog -vendor pynq 
+INFO: [HLS 200-1510] Running: set_directive_top -name convert_to_float_point convert_to_float_point 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -vendor pynq -display_name fp_8_to_ -output C:/Users/abhii/OneDrive/Desktop/convert_to_float.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'convert_to_float_point_dadd_64ns_64ns_64_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convert_to_float_point_dadd_64ns_64ns_64_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convert_to_float_point_dadd_64ns_64ns_64_5_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'convert_to_float_point_dmul_64ns_64ns_64_5_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convert_to_float_point_dmul_64ns_64ns_64_5_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convert_to_float_point_dmul_64ns_64ns_64_5_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'convert_to_float_point_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convert_to_float_point_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convert_to_float_point_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'convert_to_float_point_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convert_to_float_point_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convert_to_float_point_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'convert_to_float_point_fdiv_32ns_32ns_32_9_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convert_to_float_point_fdiv_32ns_32ns_32_9_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convert_to_float_point_fdiv_32ns_32ns_32_9_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'convert_to_float_point_fmul_32ns_32ns_32_3_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convert_to_float_point_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convert_to_float_point_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'convert_to_float_point_sitodp_32ns_64_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convert_to_float_point_sitodp_32ns_64_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convert_to_float_point_sitodp_32ns_64_4_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'convert_to_float_point_sitofp_32ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convert_to_float_point_sitofp_32ns_32_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convert_to_float_point_sitofp_32ns_32_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  1 16:33:05 2021...
+INFO: [HLS 200-802] Generated output file C:/Users/abhii/OneDrive/Desktop/convert_to_float.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 15.668 seconds; current allocated memory: 144.631 MB.
